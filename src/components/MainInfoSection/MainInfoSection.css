@@ -1,0 +1,85 @@
+/* ----------------------------
+ * MAIN INFO SECTION
+ * ---------------------------- */
+ .main-info-section {
+    /* calc() is a native CSS way to do simple math right in CSS as a replacement for any length value */
+    height: calc(100vh - 81.6px);
+}
+
+.text {
+    margin-top: 120px;
+}
+
+.text h1 {
+    color: #fff;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.text span {
+    display: inline-block;
+}
+
+span:hover {
+    color: #48CFAD;
+    /* 'all' animation轉換所有屬性 */
+    transition: all .5s;
+}
+
+span.name {
+    color: #ED5565;
+}
+
+span.m-left {
+    margin-left: 1px;
+}
+
+.text p {
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    font-size: .8rem;
+    color: #707070;
+}
+/* ------- CONTACT ME ------- */
+.text a {
+    padding: 12px 25px;
+    background-color: none;
+    border: 3px solid #57bf3e;
+    color: #57bf3e;
+    font-size: .8rem;
+    letter-spacing: 2px;
+    position: relative;
+    top: 80px;
+    overflow: hidden;
+    transition: .5s;
+    display: inline-block;    
+}
+
+.text a:hover {
+    color: #fff;
+}
+
+.text a::before{
+    content: '';
+    background-color: #57bf3e;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    
+    /* z-index only works on positioned elements,
+    讓這個element顯示在後方的圖層*/
+    z-index: -1;
+    transition: .5s;
+}
+
+.text a:hover::before {
+    height: 100%;
+}
+
+/* ------- Profile Image ------- */
+.profile-image img{
+    width: 350px;
+    margin-top: 50px;
+}

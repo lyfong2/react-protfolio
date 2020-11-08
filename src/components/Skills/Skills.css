@@ -1,0 +1,105 @@
+/* ------- Skills ------- */
+.skills {
+    height: 100vh;
+}
+
+.skills h1,
+.contact h1 {
+    text-align: right;
+    font-size: 10rem;
+/*    opacity: .1;*/
+    color: #707070;
+}
+
+.skills-info {
+    font-size: 1.4rem;
+    color: #BEBEBE;
+    max-width: 800px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-bottom: 50px;    
+}
+
+.html {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/*  ^= selecting begins with "tag-" */
+div[class^='tag-'] {
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
+    width: 120px;
+    height: 30px;
+    background-color: #1785A7;
+    margin-right: 30px;
+}
+
+div[class^='tag-'] p {
+    color: #fff;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 1.1rem;
+    padding-top: 3px;
+}
+
+.progressbar {
+    position: relative;
+    width: 600px;
+    height: 20px;
+    border: 2px solid #48CFAD;
+    border-radius: 20px;
+    margin-top: 7px;
+}
+
+
+div[class^='bar-'] {
+    position: absolute;
+    background-color: #48CFAD;
+    height: 10px;
+    border-radius: 20px;
+    margin: 2.7px;
+}
+
+.bar-node,
+.bar-css,
+.bar-javascript,
+.bar-react,
+.bar-mongodb{
+    width: calc(0 - 6px);
+}
+
+
+
+
+.work-category button {
+    text-transform: capitalize;
+    border: 3px solid #57bf3e;
+    padding: 15px 30px;
+    border-radius: 50px;
+    color: #57bf3e;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    background-color: #252627;
+    outline: none;
+    cursor: pointer;
+}
+
+div[class^='category-'] {
+    margin-top: 50px;
+    display: grid;
+    /* Use the grid-template-columns property to define the size (width) of each column in the grid layout. 
+    
+    e.g
+    grid-template-columns: 30px 200px auto 100px;
+    可以定義一行四個div, 然後分開平舖的散在螢幕上
+    
+    */
+    
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 20px;
+}

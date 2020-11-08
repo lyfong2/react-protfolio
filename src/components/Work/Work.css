@@ -1,0 +1,27 @@
+/* ------- Work ------- */
+.work a {
+    justify-self: center;
+    position: relative;
+    display: inline-block;
+}
+
+.work-category .active {
+    background-color: #57bf3e;
+}
+
+button.active {
+    color: #fff;
+}
+
+.work a img {
+    width: 350px;
+    justify-self: center;
+}
+
+div.hideCategory {
+    display: none;
+}
+
+.showCategory {
+    display: block;
+}
